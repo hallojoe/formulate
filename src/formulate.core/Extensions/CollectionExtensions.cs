@@ -25,7 +25,7 @@
         public static IEnumerable<T> MakeSafe<T>(this IEnumerable<T> items)
         {
             return items == null
-                ? new List<T>()
+                ? Enumerable.Empty<T>()
                 : items;
         }
 
